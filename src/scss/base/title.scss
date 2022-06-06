@@ -1,0 +1,17 @@
+.title {
+  font-weight: var(--typography-fontWeightBolder);
+
+  &--main {
+    color: var(--palette-primary-title);
+    font-size: 44px;
+  }
+  &--primary {
+    color: var(--palette-primary-title);
+    font-size: 36px;
+  }
+
+  &--secondary {
+    color: var(--palette-secondary-title);
+    font-size: 24px;
+  }
+}

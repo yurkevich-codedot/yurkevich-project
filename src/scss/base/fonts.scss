@@ -1,1 +1,9 @@
-$font-base-url: "../../fonts/";
+$font-base-url: "../../fonts/Harabara/Harabara.ttf";
+
+@font-face {
+  font-family: "Harabara";
+  src: local("Harabara"), url("../../fonts/Harabara/Harabara.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

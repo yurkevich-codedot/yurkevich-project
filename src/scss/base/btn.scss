@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  line-height: 36px;
+  padding-left: 29px;
+  padding-right: 29px;
+  border-width: 2px;
+  width: max-content;
+  border-color: var(--palette-background-btn);
+  border-radius: var(--border-radius-2);
+  font-weight: var(--typography-fontWeightBolder);
+
+  &--green {
+    background-color: var(--palette-background-btn);
+    color: var(--palette-secondary-text);
+  }
+
+  &--white {
+    background-color: var(--palette-secondary-text);
+    color: var(--palette-background-btn);
+  }
+}
