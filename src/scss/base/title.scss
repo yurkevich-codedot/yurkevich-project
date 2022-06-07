@@ -1,5 +1,6 @@
 .title {
   font-weight: var(--typography-fontWeightBolder);
+  letter-spacing: 1px;
 
   &--main {
     color: var(--palette-primary-title);
@@ -13,5 +14,9 @@
   &--secondary {
     color: var(--palette-secondary-title);
     font-size: 24px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
   }
 }

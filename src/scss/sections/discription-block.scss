@@ -1,0 +1,38 @@
+.discription-block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__wrapper {
+    display: flex;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      gap: 140px;
+    }
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media-breakpoint-down(lg) {
+      align-items: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-basis: 553px;
+    }
+  }
+
+  &__discription {
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+  }
+}
