@@ -2,17 +2,32 @@
   font-weight: var(--typography-fontWeightBolder);
   letter-spacing: 1px;
 
-  &--main {
+  &--white {
+    color: white;
+  }
+
+  &--primary-blue {
     color: var(--palette-primary-title);
+  }
+
+  &--secondary-blue {
+    color: var(--palette-secondary-title);
+  }
+
+  &--main {
     font-size: 44px;
+    line-height: 60px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 38px;
+    }
   }
   &--primary {
-    color: var(--palette-primary-title);
     font-size: 36px;
   }
 
   &--secondary {
-    color: var(--palette-secondary-title);
     font-size: 24px;
 
     @include media-breakpoint-down(lg) {
