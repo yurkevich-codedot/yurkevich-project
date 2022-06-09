@@ -1,5 +1,7 @@
 .title {
+  font-family: var(--typography-fontFamily-headings);
   font-weight: var(--typography-fontWeightBolder);
+  text-transform: uppercase;
   letter-spacing: 1px;
 
   &--white {
@@ -25,10 +27,16 @@
   }
   &--primary {
     font-size: 36px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 22px;
+      line-height: 24px;
+    }
   }
 
   &--secondary {
     font-size: 24px;
+    line-height: 38px;
 
     @include media-breakpoint-down(lg) {
       font-size: 20px;

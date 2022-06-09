@@ -1,4 +1,8 @@
 .quote {
+  &__wrapper {
+    position: relative;
+    min-height: 635px;
+  }
   &__background {
     &-blue {
       position: absolute;

@@ -1,0 +1,191 @@
+.contacts {
+  padding-top: 40px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(lg) {
+      gap: 32px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 110px;
+    }
+  }
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include media-breakpoint-down(lg) {
+      gap: 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 60px;
+    }
+  }
+
+  &__subtitles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-breakpoint-down(lg) {
+      gap: 33px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: var(--typography-fontWeightBolder);
+
+    @include media-breakpoint-down(lg) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__discription {
+    @include media-breakpoint-down(lg) {
+      line-height: 26px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      line-height: 20px;
+    }
+  }
+
+  &__data-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      gap: 67px;
+    }
+  }
+
+  &__communication {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(lg) {
+      gap: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 30px;
+    }
+
+    &-item {
+      display: flex;
+      gap: 21px;
+      align-items: baseline;
+
+      @include media-breakpoint-down(lg) {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+      &-text {
+        font-size: 20px;
+
+        @include media-breakpoint-down(lg) {
+          line-height: 30px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 625px;
+      justify-content: flex-end;
+    }
+  }
+
+  &__form-inner {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    gap: 20px;
+    padding: 50px 40px 70px 40px;
+    box-shadow: var(--shadows-2);
+
+    @include media-breakpoint-down(lg) {
+      padding: 40px 22px;
+      width: 100%;
+    }
+  }
+
+  &__form-item {
+    padding: 10px 15px;
+    background: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    width: 339px;
+
+    &--large {
+      height: 80px;
+      resize: none;
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    padding-top: 10px;
+  }
+
+  &__form-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    row-gap: 90px;
+    bottom: 20px;
+    width: 100%;
+    z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      left: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 90px;
+    }
+
+    &-item {
+      display: flex;
+      width: 34%;
+      justify-content: center;
+    }
+  }
+}
