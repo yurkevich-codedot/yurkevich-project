@@ -1,22 +1,22 @@
 .btn {
+  font-weight: var(--typography-fontWeightBold);
+  line-height: 36px;
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
-  line-height: 36px;
-  padding-left: 29px;
   padding-right: 29px;
+  padding-left: 29px;
+  text-transform: uppercase;
   border-width: 2px;
   border-color: var(--palette-background-btn);
   border-radius: var(--border-radius-2);
-  font-weight: var(--typography-fontWeightBolder);
 
   &--green {
-    background-color: var(--palette-background-btn);
     color: var(--palette-secondary-text);
+    background-color: var(--palette-background-btn);
   }
 
   &--white {
-    background-color: var(--palette-secondary-text);
     color: var(--palette-background-btn);
+    background-color: var(--palette-secondary-text);
   }
 }

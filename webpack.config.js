@@ -79,7 +79,8 @@ const config = {
       },
       {
         test: /\.html$/,
-        include: path.resolve(__dirname, "src/html/includes"),
+        include: path.resolve(__dirname, "src/html/"),
+        exclude: /templates/,
         use: ["raw-loader"],
       },
     ],

@@ -1,5 +1,6 @@
 // Libs
 @import "~destyle.css/destyle.css";
+@import "~swiper/scss";
 
 // Base
 @import "base/functions";
@@ -9,23 +10,19 @@
 @import "base/reboot";
 
 // Blocks
-// ...
+@import "blocks/buttons";
+@import "blocks/container";
+@import "blocks/title";
 
 // Sections
 @import "sections/header";
 @import "sections/footer";
-
-// Templates
-// ...
-
-@import "base/btn";
-@import "base/title";
-@import "base/container";
-@import "sections/discription-block";
-@import "sections/adversting";
+@import "sections/description-block";
+@import "sections/advertising";
 @import "sections/services";
 @import "sections/quote";
 @import "sections/contacts";
 @import "sections/projects";
 
-
+// Templates
+// ...

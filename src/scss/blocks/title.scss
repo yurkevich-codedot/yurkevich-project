@@ -1,8 +1,8 @@
 .title {
   font-family: var(--typography-fontFamily-headings);
-  font-weight: var(--typography-fontWeightBolder);
-  text-transform: uppercase;
+  font-weight: var(--typography-fontWeightBold);
   letter-spacing: 1px;
+  text-transform: uppercase;
 
   &--white {
     color: white;
@@ -25,6 +25,7 @@
       line-height: 38px;
     }
   }
+
   &--primary {
     font-size: 36px;
 

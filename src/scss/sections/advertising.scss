@@ -1,4 +1,4 @@
-.adversting {
+.advertising {
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -6,17 +6,17 @@
     display: flex;
     justify-content: center;
   }
+
   &__inner {
+    display: flex;
     align-items: center;
     border-radius: var(--border-radius-1);
     box-shadow: var(--shadows-2);
-    display: flex;
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
-      padding: 15px;
-      gap: 23px;
       padding: 32px 15px 53px 15px;
+      gap: 23px;
     }
 
     @include media-breakpoint-between(lg, xl) {
@@ -31,13 +31,13 @@
   }
 
   &__rating {
-    align-items: center;
-    display: flex;
     position: relative;
+    display: flex;
+    align-items: center;
 
     @include media-breakpoint-down(lg) {
-      padding-left: 0;
       padding-bottom: 12px;
+      padding-left: 0;
     }
 
     @include media-breakpoint-up(lg) {
@@ -46,7 +46,7 @@
 
     &-avg {
       font-size: 18px;
-      font-weight: var(--typography-fontWeightBold);
+      font-weight: var(--typography-fontWeightSemiBold);
       line-height: 38px;
     }
 
@@ -55,13 +55,13 @@
     }
 
     &-view--active {
-      height: 100%;
+      font-size: 28px;
       position: absolute;
       top: 0;
 
-      font-size: 28px;
-      letter-spacing: 11px;
       overflow: hidden;
+      height: 100%;
+      letter-spacing: 11px;
 
       @include media-breakpoint-down(lg) {
         width: 66%;
@@ -72,25 +72,25 @@
       }
 
       &::before {
-        content: "★★★★★";
         position: absolute;
-        width: 100%;
-        height: 100%;
         top: 0;
         left: 39px;
+        width: 100%;
+        height: 100%;
+        content: "★★★★★";
         color: green;
       }
     }
 
     &-view::before {
-      color: #e1e1e1;
-      content: "★★★★★";
       font-size: 28px;
-      letter-spacing: 11px;
       position: relative;
       bottom: 2px;
-      padding-left: 10px;
       padding-right: 2px;
+      padding-left: 10px;
+      content: "★★★★★";
+      letter-spacing: 11px;
+      color: #e1e1e1;
     }
 
     &-review {
