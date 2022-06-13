@@ -1,17 +1,17 @@
 <%
 var htmlTop = { title: "Stan's assets" };
 %>
-<%=_.template(require('./../includes/_html-top.html').default)(htmlTop)%>
+<%=_.template(require('./../_html-top.html').default)(htmlTop)%>
 
-<%=_.template(require('./../includes/header.html').default)()%>
+<%=_.template(require('./../sections/header.html').default)()%>
 <main>
-  <%=_.template(require('./../includes/discription.html').default)()%>
-  <%=_.template(require('./../includes/adversting.html').default)()%>
-  <%=_.template(require('./../includes/quote.html').default)()%>
-  <%=_.template(require('./../includes/contacts.html').default)()%>
-  <%=_.template(require('./../includes/services.html').default)()%>
-  <%=_.template(require('./../includes/projects.html').default)()%>
+  <%=_.template(require('./../sections/advertising.html').default)()%>
+  <%=_.template(require('./../sections/services.html').default)()%>
+  <%=_.template(require('./../sections/quote.html').default)()%>
+  <%=_.template(require('./../sections/description.html').default)()%>
+  <%=_.template(require('./../sections/contacts.html').default)()%>
+  <%=_.template(require('./../sections/projects.html').default)()%>
 </main>
-<%=_.template(require('./../includes/footer.html').default)()%>
+<%=_.template(require('./../sections/footer.html').default)()%>
 
-<%=_.template(require('./../includes/_html-bottom.html').default)()%>
+<%=_.template(require('./../_html-bottom.html').default)()%>

@@ -1,2 +1,4 @@
-/src/html/includes/_*
+/src/html/_*.html
+/src/html/blocks/_*.html
+/src/html/sections/_*.html
 /src/html/templates

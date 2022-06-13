@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-right: var(--spacing-container-mobile);
+    padding-left: var(--spacing-container-mobile);
+    max-width: $breakpoints-sm;
+  }
+
+  @include media-breakpoint-between(sm, md) {
+    padding-right: var(--spacing-container-mobile);
+    padding-left: var(--spacing-container-mobile);
+    max-width: $breakpoints-sm;
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    padding-right: var(--spacing-container-mobile);
+    padding-left: var(--spacing-container-mobile);
+    max-width: $breakpoints-md;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
+    max-width: $breakpoints-lg;
+  }
+
+  @include media-breakpoint-between(xl, xxl) {
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
+    max-width: $breakpoints-xl;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
+    max-width: $breakpoints-xxl;
+  }
+}

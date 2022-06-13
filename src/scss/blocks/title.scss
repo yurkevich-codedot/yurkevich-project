@@ -1,0 +1,59 @@
+.title {
+  font-family: var(--typography-fontFamily-headings);
+  font-weight: var(--typography-fontWeightBold);
+
+  text-transform: uppercase;
+
+  &--white {
+    color: white;
+  }
+
+  &--main-blue {
+    color: var(--palette-primary-title);
+  }
+
+  &--primary-blue {
+    color: var(--palette-secondary-title);
+  }
+
+  &--main {
+    letter-spacing: 1px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 44px;
+      line-height: 60px;
+    }
+  }
+
+  &--primary {
+    @include media-breakpoint-down(lg) {
+      letter-spacing: 1px;
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+      line-height: 24px;
+      letter-spacing: 3px;
+    }
+  }
+
+  &--secondary {
+    letter-spacing: 1px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+      line-height: 38px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+}

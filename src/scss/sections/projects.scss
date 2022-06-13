@@ -1,19 +1,20 @@
 .projects {
   &__wrapper {
-    padding-top: 255px;
     display: flex;
     flex-direction: column;
+    padding-top: 255px;
     gap: 100px;
   }
+
   &__title {
     text-align: center;
   }
 
   &__item {
-    border-radius: var(--border-radius-1);
-    overflow: hidden;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
+    border-radius: var(--border-radius-1);
     box-shadow: var(--shadows-2);
 
     @include media-breakpoint-down(lg) {
@@ -30,9 +31,9 @@
   }
 
   &__img-wrapper {
+    display: flex;
     width: 100%;
     min-height: 278px;
-    display: flex;
   }
 
   &__img-inner {
@@ -41,22 +42,14 @@
   }
 
   &__img {
-    object-fit: cover;
     position: absolute;
     width: 100%;
     height: 100%;
-  }
-
-  &__background {
-    min-height: 1180px;
-    max-height: 1180px;
-
-    &-img {
-      z-index: -1;
-    }
+    object-fit: cover;
   }
 
   &__swiper-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     max-height: 100%;
@@ -65,13 +58,13 @@
   &__button-prev,
   &__button-next {
     position: absolute;
-    width: 32px;
-    height: 32px;
     z-index: 10;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
     border-top: 10px solid var(--palette-swiper-arrow);
     border-right: 10px solid var(--palette-swiper-arrow);
 
@@ -81,12 +74,17 @@
   }
 
   &__button-prev {
-    left: 55px;
+    left: -70px;
     transform: rotate(225deg);
   }
 
   &__button-next {
-    right: 55px;
+    right: -70px;
     transform: rotate(45deg);
   }
+}
+
+.swiper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
