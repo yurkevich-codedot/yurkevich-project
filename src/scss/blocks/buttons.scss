@@ -13,10 +13,34 @@
   &--green {
     color: var(--palette-secondary-text);
     background-color: var(--palette-background-btn);
+    transition: background-color 0.2s linear, border-color 0.2s linear;
+
+    &:hover {
+      background-color: #0a8d4e;
+      border-color: #0a8d4e;
+    }
+
+    &:active {
+      background-color: #06703d;
+      border-color: #06703d;
+    }
   }
 
   &--white {
     color: var(--palette-background-btn);
     background-color: var(--palette-secondary-text);
+    transition: background-color 0.2s linear, border-color 0.2s linear;
+
+    &:hover {
+      background-color: var(--palette-background-btn);
+      border-color: var(--palette-background-btn);
+      color: var(--palette-secondary-text);
+    }
+
+    &:active {
+      background-color: #06703d;
+      border-color: #06703d;
+      color: var(--palette-secondary-text);
+    }
   }
 }
