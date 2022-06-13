@@ -1,6 +1,6 @@
 import { Navigation } from "swiper";
 
-export const projectsOptions = {
+export let projectsOptions = {
   modules: [Navigation],
   loop: true,
 

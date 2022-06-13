@@ -1,4 +1,9 @@
 import Swiper from "swiper";
 import { projectsOptions } from "./includes/swiperOptions";
 
-const projectsSwiper = new Swiper(".swiper", projectsOptions);
+if (window.screen.width >= 992) {
+  let projectsSwiper = new Swiper(".swiper", projectsOptions);
+  swiper = projectsSwiper;
+} else {
+  swiper = projectsSwiper;
+}

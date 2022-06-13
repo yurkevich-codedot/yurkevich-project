@@ -1,9 +1,28 @@
 .projects {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__background {
+    background-color: #276ed80a;
+  }
+
+  &__background-img {
+    width: 100%;
+    height: 100%;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 255px;
-    gap: 100px;
+    padding-top: 45px;
+
+    @include media-breakpoint-down(lg) {
+      gap: 35px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 100px;
+    }
   }
 
   &__title {
@@ -16,24 +35,34 @@
     flex-direction: column;
     border-radius: var(--border-radius-1);
     box-shadow: var(--shadows-2);
-
-    @include media-breakpoint-down(lg) {
-      max-height: 390px;
-    }
   }
 
   &__name-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 20px 16px 35px 16px;
     background-color: white;
     gap: 10px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 8px 11px 16px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 20px 16px 35px 16px;
+    }
   }
 
   &__img-wrapper {
     display: flex;
     width: 100%;
-    min-height: 278px;
+
+    @include media-breakpoint-down(lg) {
+      min-height: 225px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      min-height: 278px;
+    }
   }
 
   &__img-inner {
@@ -48,28 +77,37 @@
     object-fit: cover;
   }
 
-  &__swiper-wrapper {
+  &__swiper {
     position: relative;
     display: flex;
     align-items: center;
     max-height: 100%;
   }
 
+  &__items--column {
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
   &__button-prev,
   &__button-next {
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    border-top: 10px solid var(--palette-swiper-arrow);
-    border-right: 10px solid var(--palette-swiper-arrow);
-
     @include media-breakpoint-down(lg) {
       display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      border-top: 10px solid var(--palette-swiper-arrow);
+      border-right: 10px solid var(--palette-swiper-arrow);
     }
   }
 
