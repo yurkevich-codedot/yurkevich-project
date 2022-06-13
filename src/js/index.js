@@ -14,7 +14,6 @@ const swiper = new Swiper(".swiper", {
       direction: "vertical",
       spaceBetween: 40,
       slidesPerView: 3,
-      mousewheel: true,
     },
     992: {
       direction: "horizontal",
