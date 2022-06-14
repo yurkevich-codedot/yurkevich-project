@@ -1,2 +1,51 @@
 .header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 21px;
+  }
+
+  &__nav-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 23px;
+    padding-top: 17px;
+
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+
+  &__nav-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: var(--palette-secondary-title);
+    font-weight: var(--typography-fontWeightBold);
+
+    &-list::after {
+      position: relative;
+      bottom: 2px;
+      left: 3px;
+      display: flex;
+      align-items: center;
+      content: "";
+      border-right: 2px solid var(--palette-secondary-title);
+      border-top: 2px solid var(--palette-secondary-title);
+      width: 6px;
+      height: 6px;
+      color: var(--palette-secondary-title);
+      transform: rotate(135deg);
+    }
+  }
+
+  &__btn-wrapper {
+    padding-top: 12px;
+
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
 }

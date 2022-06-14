@@ -1,27 +1,38 @@
 .hero {
+  min-height: 494px;
+  position: relative;
   &__wrapper {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    padding-top: 48px;
+    justify-content: space-between;
 
     @include media-breakpoint-down(lg) {
       gap: 36px;
     }
   }
 
-  &__icon-img {
-    width: 100%;
-    height: 100%;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
   }
 
-  &__inner {
+  &__icon-wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 79%;
+  }
+
+  &__icon-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @include media-breakpoint-down(lg) {
-      flex-direction: column;
-    }
+    transform: translateY(-22%);
   }
 
   &__navigation {
