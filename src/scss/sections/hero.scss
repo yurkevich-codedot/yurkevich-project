@@ -1,6 +1,7 @@
 .hero {
   min-height: 494px;
   position: relative;
+  z-index: -2;
   &__wrapper {
     display: flex;
     flex-direction: column;
