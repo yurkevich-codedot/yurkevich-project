@@ -35,20 +35,35 @@
     flex-direction: column;
     border-radius: var(--border-radius-1);
     box-shadow: var(--shadows-2);
+    height: auto;
+  }
+
+  &__description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    line-height: 26px;
+
+    @include media-breakpoint-down(lg) {
+      -webkit-line-clamp: 4;
+    }
+    @include media-breakpoint-up(lg) {
+      -webkit-line-clamp: 3;
+    }
   }
 
   &__name-wrapper {
     display: flex;
     flex-direction: column;
     background-color: white;
-    gap: 10px;
 
     @include media-breakpoint-down(lg) {
       padding: 8px 11px 16px;
     }
 
     @include media-breakpoint-up(lg) {
-      padding: 20px 16px 35px 16px;
+      padding: 16px 16px 16px 16px;
+      gap: 6px;
     }
   }
 

@@ -7,7 +7,6 @@
   z-index: 4;
   background-color: transparent;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -34,7 +33,7 @@
     }
     &:not(:checked) + .backdrop + {
       .header__inner {
-        left: -280px;
+        left: -100%;
       }
     }
   }
@@ -79,19 +78,23 @@
       background-color: white;
       display: flex;
       flex-direction: column;
-      padding-left: 46px;
-      padding-right: 60px;
+      padding-inline-start: 46px;
+      padding-inline-end: 16px;
       height: 100vh;
       box-shadow: var(--shadows-menu);
       z-index: 5;
       transition: left 0.5s ease-in-out;
+      width: 275px;
     }
+
     @include media-breakpoint-between(xl, xxl) {
       gap: 30px;
+      align-items: baseline;
     }
 
     @include media-breakpoint-up(xxl) {
       gap: 142px;
+      align-items: baseline;
     }
   }
 
@@ -106,66 +109,118 @@
 
   &__nav {
     &-list::after {
-      position: relative;
-      bottom: 2px;
-      left: 3px;
-      display: flex;
-      align-items: center;
-      content: "";
-      border-right: 2px solid var(--palette-secondary-title);
-      border-top: 2px solid var(--palette-secondary-title);
-      width: 6px;
-      height: 6px;
-      color: var(--palette-secondary-title);
-      transform: rotate(135deg);
+      @include media-breakpoint-down(xl) {
+        display: none;
+      }
+      @include media-breakpoint-up(xl) {
+        position: relative;
+        bottom: 2px;
+        left: 3px;
+        display: flex;
+        align-items: center;
+        content: "";
+        border-right: 2px solid var(--palette-secondary-title);
+        border-top: 2px solid var(--palette-secondary-title);
+        width: 6px;
+        height: 6px;
+        color: var(--palette-secondary-title);
+        transform: rotate(135deg);
+      }
     }
 
     &-list:hover {
       .header__nav-list-wrapper {
-        display: flex;
-        background-color: #fff;
-        border-bottom-left-radius: var(--border-radius-1);
-        border-bottom-right-radius: var(--border-radius-1);
-        border-top: 3px solid #00a4e8;
-        box-shadow: var(--shadows-1);
-        flex-direction: column;
-        gap: 17px;
-        padding: 18px 17px 21px;
-        position: absolute;
-        top: 55px;
-        z-index: 2;
+        @include media-breakpoint-up(xl) {
+          display: flex;
+          background-color: #fff;
+          border-bottom-left-radius: var(--border-radius-1);
+          border-bottom-right-radius: var(--border-radius-1);
+          border-top: 3px solid #00a4e8;
+          box-shadow: var(--shadows-1);
+          flex-direction: column;
+          gap: 17px;
+          padding: 18px 17px 21px;
+          position: absolute;
+          top: 55px;
+          z-index: 2;
+        }
       }
     }
   }
 
   &__nav-list-wrapper {
-    display: none;
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      flex-direction: column;
+      padding-inline-start: 20px;
+      gap: 12px;
+    }
   }
+
+  &__list-item {
+    color: var(--palette-secondary-title);
+
+    &:hover {
+      color: rgba(0, 164, 232, 1);
+    }
+
+    @include media-breakpoint-down(xl) {
+      font-size: 14px;
+    }
+  }
+
   &__nav-wrapper {
     display: flex;
-    gap: 23px;
     padding-top: 17px;
 
     @include media-breakpoint-down(xl) {
       flex-direction: column;
+      padding-bottom: 12px;
     }
 
     @include media-breakpoint-up(xl) {
       align-items: center;
+      gap: 23px;
+    }
+  }
+
+  &__cross-item {
+    @include media-breakpoint-down(xl) {
+      color: var(--palette-background-btn);
+      display: flex;
+      justify-content: flex-end;
+      font-weight: var(--typography-fontWeightSemiBold);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
     }
   }
 
   &__nav-item {
-    display: flex;
-    align-items: center;
     gap: 3px;
     color: var(--palette-secondary-title);
     font-weight: var(--typography-fontWeightBold);
     padding-top: 5px;
     padding-bottom: 5px;
-  }
 
-  &__btn-wrapper {
-    padding-top: 12px;
+    &:hover {
+      color: rgba(0, 164, 232, 1);
+    }
+
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      flex-direction: column;
+      font-weight: 100;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: center;
+    }
   }
 }

@@ -9,6 +9,7 @@
   border-width: 2px;
   border-color: var(--palette-background-btn);
   border-radius: var(--border-radius-2);
+  width: max-content;
 
   &--green {
     color: var(--palette-secondary-text);
