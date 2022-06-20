@@ -204,7 +204,6 @@
   &__nav-item {
     gap: 3px;
     color: var(--palette-secondary-title);
-    font-weight: var(--typography-fontWeightBold);
     padding-top: 5px;
     padding-bottom: 5px;
 
@@ -221,6 +220,7 @@
     @include media-breakpoint-up(xl) {
       display: flex;
       align-items: center;
+      font-weight: var(--typography-fontWeightBold);
     }
   }
 }
