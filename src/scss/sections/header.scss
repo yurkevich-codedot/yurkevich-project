@@ -79,12 +79,13 @@
       display: flex;
       flex-direction: column;
       padding-inline-start: 46px;
-      padding-inline-end: 16px;
+      padding-inline-end: 8px;
       height: 100vh;
       box-shadow: var(--shadows-menu);
       z-index: 5;
       transition: left 0.5s ease-in-out;
       width: 275px;
+      overflow-y: auto;
     }
 
     @include media-breakpoint-between(xl, xxl) {
@@ -202,6 +203,10 @@
     @include media-breakpoint-up(xl) {
       display: none;
     }
+  }
+
+  &__btn-wrapper {
+    padding-right: 42px;
   }
 
   &__nav-item {
