@@ -1,39 +1,72 @@
 .hero {
-  min-height: 494px;
+  padding-top: 44px;
   position: relative;
-  z-index: -2;
+
   &__wrapper {
     display: flex;
-    flex-direction: column;
-    padding-top: 48px;
-    justify-content: space-between;
+    position: relative;
 
     @include media-breakpoint-down(lg) {
-      gap: 36px;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    @include media-breakpoint-up(lg) {
+      justify-content: space-between;
     }
   }
 
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: 125px;
+
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      gap: 43px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      gap: 70px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      gap: 125px;
+    }
+  }
+
+  &__title {
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
   }
 
   &__icon-wrapper {
     display: flex;
-    width: 50%;
-    justify-content: center;
-  }
 
-  &__icon {
-    width: 79%;
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+      width: 70%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-end;
+      width: 70%;
+    }
   }
 
   &__icon-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    transform: translateY(-22%);
+    justify-content: center;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    width: 100%;
   }
 
   &__navigation {
@@ -54,6 +87,10 @@
       @include media-breakpoint-down(lg) {
         display: none;
       }
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 12px;
     }
   }
 }
