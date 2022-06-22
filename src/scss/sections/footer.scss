@@ -10,21 +10,16 @@
     height: 100%;
     z-index: -1;
     left: 0;
-  }
 
-  &__backgroundlayer-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    left: 0;
+    &--backlayer {
+      position: absolute;
+    }
   }
 
   &__wrapper {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
-    gap: 73px;
     background-color: var(--palette-primary-title);
 
     @include media-breakpoint-down(xl) {
@@ -109,16 +104,17 @@
 
   &__subitem {
     position: relative;
-    color: white;
+    color: var(--palette-secondary-text);
     line-height: 20px;
     width: max-content;
+
     &:hover::before {
       position: absolute;
       content: "";
       top: 100%;
       width: 100%;
       height: 3px;
-      background-color: white;
+      background-color: var(--palette-secondary-text);
     }
   }
 
@@ -132,13 +128,14 @@
   &__item-name {
     position: relative;
     width: max-content;
+
     &:hover::before {
       position: absolute;
       content: "";
       top: 100%;
       width: 100%;
       height: 3px;
-      background-color: white;
+      background-color: var(--palette-secondary-text);
     }
   }
 
@@ -156,8 +153,7 @@
 
   &__subwrapper {
     position: relative;
-    background-color: white;
-
+    background-color: var(--palette-secondary-text);
     padding-bottom: 20px;
     font-size: 14px;
     line-height: 20px;
@@ -199,7 +195,8 @@
           top: 50%;
           left: 0;
           height: 1px;
-          background-color: #0d6db752;
+          background-color: var(--palette-secondary-title);
+          opacity: 0.2;
         }
       }
 
