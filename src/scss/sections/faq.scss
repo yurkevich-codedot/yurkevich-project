@@ -1,0 +1,198 @@
+.faq {
+  &__title {
+    text-align: center;
+  }
+
+  &__questions {
+    position: relative;
+    &-wrapper {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      @include media-breakpoint-down(xl) {
+        margin-top: 35px;
+        margin-bottom: 72px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        margin: 24px 170px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        border: 6px solid #66d6a0;
+        border-radius: 14px;
+        z-index: 5;
+
+        @include media-breakpoint-down(lg) {
+          height: 95%;
+          width: 105%;
+        }
+      }
+    }
+
+    &-list {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+
+      z-index: 6;
+
+      @include media-breakpoint-down(lg) {
+        padding-left: 19px;
+        gap: 30px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 43px 23px;
+        width: 93%;
+        gap: 26px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      padding-left: 20px;
+      position: relative;
+      color: var(--palette-secondary-title);
+      font-weight: var(--typography-fontWeightSemiBold);
+      z-index: 2;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 0;
+        border-radius: 50px;
+        background-color: var(--palette-secondary-title);
+        z-index: 2;
+
+        @include media-breakpoint-down(lg) {
+          top: 7px;
+          padding-top: 5px;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        line-height: 30px;
+        align-items: center;
+      }
+    }
+  }
+
+  &__answer {
+    &-checkbox {
+      display: none;
+
+      &:checked ~ .faq__answer-inner {
+        display: block;
+        opacity: 1;
+      }
+
+      &:not(:checked) ~ .faq__answer-inner {
+        display: none;
+        opacity: 0;
+      }
+
+      &:checked ~ .faq__answer-title::before {
+        transform: rotate(-45deg);
+      }
+
+      &:not(:checked) ~ .faq__answer-title::before {
+        transform: rotate(135deg);
+      }
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+
+      @include media-breakpoint-up(xl) {
+        padding-left: 236px;
+        padding-right: 214px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding-left: 24px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      border-bottom: 1px solid var(--palette-secondary-title);
+
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 10px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 15px;
+      }
+    }
+    &-title {
+      font-weight: var(--typography-fontWeightBold);
+      position: relative;
+      display: flex;
+      padding-inline-start: 30px;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 18px;
+        line-height: 28px;
+        top: 16px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        transition: transform 0.1s linear;
+      }
+
+      @include media-breakpoint-up(lg) {
+        align-items: center;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    &-inner {
+      line-height: 26px;
+      padding-left: 32px;
+      padding-right: 32px;
+      transition: opacity 0.2s linear;
+
+      @include media-breakpoint-down(lg) {
+        padding-top: 9px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-top: 15px;
+      }
+    }
+  }
+}
