@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 40px;
+  padding-top: 120px;
 
   &__wrapper {
     display: flex;
@@ -25,7 +25,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      gap: 60px;
+      gap: 68px;
     }
   }
 
