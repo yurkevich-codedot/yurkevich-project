@@ -1,15 +1,15 @@
 .hero {
+  position: relative;
   padding-top: 44px;
   padding-bottom: 26px;
-  position: relative;
 
   &__wrapper {
-    display: flex;
     position: relative;
+    display: flex;
 
     @include media-breakpoint-down(lg) {
-      gap: 10px;
       flex-direction: column;
+      gap: 10px;
     }
 
     @include media-breakpoint-up(lg) {
@@ -76,8 +76,8 @@
 
     &-item:not(:first-of-type)::after,
     &-item:not(:last-of-type)::after {
-      content: ">";
       padding: 0 5px;
+      content: ">";
     }
 
     &-item:last-of-type::after {

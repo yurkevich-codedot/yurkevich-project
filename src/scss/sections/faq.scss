@@ -1,16 +1,18 @@
 .faq {
   padding-bottom: 330px;
+
   &__title {
     text-align: center;
   }
 
   &__questions {
     position: relative;
+
     &-wrapper {
-      display: flex;
       position: relative;
-      justify-content: center;
+      display: flex;
       align-items: center;
+      justify-content: center;
       @include media-breakpoint-down(xl) {
         margin-top: 35px;
         margin-bottom: 79px;
@@ -18,33 +20,33 @@
 
       @include media-breakpoint-up(xl) {
         margin-top: 24px;
+        margin-right: 170px;
         margin-bottom: 27px;
         margin-left: 170px;
-        margin-right: 170px;
       }
 
       &::before {
-        content: "";
         position: absolute;
+        z-index: 5;
         width: 100%;
         height: 70%;
+        content: "";
         border: 6px solid #66d6a0;
         border-radius: 14px;
-        z-index: 5;
 
         @include media-breakpoint-down(lg) {
-          height: 95%;
           width: 105%;
+          height: 95%;
         }
       }
     }
 
     &-list {
-      background-color: #fff;
+      z-index: 6;
       display: flex;
       flex-direction: column;
 
-      z-index: 6;
+      background-color: #fff;
 
       @include media-breakpoint-down(lg) {
         padding-left: 19px;
@@ -52,29 +54,29 @@
       }
 
       @include media-breakpoint-up(lg) {
-        padding: 43px 23px;
         width: 93%;
+        padding: 43px 23px;
         gap: 26px;
       }
     }
 
     &-item {
+      font-weight: var(--typography-fontWeightSemiBold);
+      position: relative;
+      z-index: 2;
       display: flex;
       padding-left: 20px;
-      position: relative;
       color: var(--palette-secondary-title);
-      font-weight: var(--typography-fontWeightSemiBold);
-      z-index: 2;
 
       &::before {
-        content: "";
         position: absolute;
+        z-index: 2;
+        left: 0;
         width: 12px;
         height: 12px;
-        left: 0;
+        content: "";
         border-radius: 50px;
         background-color: var(--palette-secondary-title);
-        z-index: 2;
 
         @include media-breakpoint-down(lg) {
           top: 7px;
@@ -117,19 +119,20 @@
         transform: rotate(135deg);
       }
     }
+
     &-wrapper {
       display: flex;
       flex-direction: column;
       gap: 18px;
 
       @include media-breakpoint-up(xl) {
-        padding-left: 236px;
         padding-right: 214px;
+        padding-left: 236px;
       }
 
       @include media-breakpoint-between(lg, xl) {
-        padding-left: 50px;
         padding-right: 50px;
+        padding-left: 50px;
       }
 
       @include media-breakpoint-down(lg) {
@@ -149,6 +152,7 @@
         padding-bottom: 20px;
       }
     }
+
     &-title {
       font-weight: var(--typography-fontWeightBold);
       position: relative;
@@ -167,13 +171,13 @@
 
       &::before {
         position: absolute;
-        content: "";
-        border-top: 3px solid black;
-        border-right: 3px solid black;
         left: 0;
         width: 12px;
         height: 12px;
+        content: "";
         transition: transform 0.1s linear;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
 
         @include media-breakpoint-down(lg) {
           top: 13px;
@@ -181,16 +185,16 @@
       }
 
       @include media-breakpoint-up(lg) {
-        align-items: center;
         font-size: 18px;
         line-height: 28px;
+        align-items: center;
       }
     }
 
     &-inner {
       line-height: 26px;
-      padding-left: 32px;
       padding-right: 32px;
+      padding-left: 32px;
       transition: opacity 0.2s linear;
 
       @include media-breakpoint-down(lg) {

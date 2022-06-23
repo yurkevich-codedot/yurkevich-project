@@ -5,20 +5,22 @@
 .backdrop {
   position: fixed;
   z-index: 12;
-  background-color: transparent;
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: transparent;
 }
 
 .header {
   #menu {
     display: none;
+
     &:checked + {
       .backdrop {
         left: 0px;
       }
     }
+
     &:not(:checked) + {
       .backdrop {
         left: -100%;
@@ -31,6 +33,7 @@
         left: 0px;
       }
     }
+
     &:not(:checked) + .backdrop + {
       .header__inner {
         left: -100%;
@@ -43,21 +46,21 @@
       display: none;
     }
     @include media-breakpoint-down(xl) {
+      position: relative;
       width: 26px;
       height: 4px;
-      background-color: var(--palette-primary-title);
       border-radius: 2px;
-      position: relative;
+      background-color: var(--palette-primary-title);
 
       &:after,
       &:before {
-        content: "";
+        position: absolute;
         width: 26px;
         height: 4px;
-        background-color: var(--palette-primary-title);
+        content: "";
         color: var(--palette-primary-title);
         border-radius: 2px;
-        position: absolute;
+        background-color: var(--palette-primary-title);
       }
 
       &::after {
@@ -74,37 +77,37 @@
     display: flex;
     @include media-breakpoint-down(xl) {
       position: fixed;
+      z-index: 13;
       top: 0;
-      background-color: white;
       display: flex;
+      overflow-y: auto;
       flex-direction: column;
+      width: 275px;
+      height: 100vh;
+      transition: left 0.5s ease-in-out;
+      background-color: white;
+      box-shadow: var(--shadows-menu);
       padding-inline-start: 46px;
       padding-inline-end: 8px;
-      height: 100vh;
-      box-shadow: var(--shadows-menu);
-      z-index: 13;
-      transition: left 0.5s ease-in-out;
-      width: 275px;
-      overflow-y: auto;
     }
 
     @include media-breakpoint-between(xl, xxl) {
-      gap: 30px;
       align-items: baseline;
+      gap: 30px;
     }
 
     @include media-breakpoint-up(xxl) {
-      gap: 142px;
       align-items: baseline;
+      gap: 142px;
     }
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 7px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
 
     @include media-breakpoint-up(lg) {
       padding-bottom: 21px;
@@ -122,31 +125,31 @@
         left: 3px;
         display: flex;
         align-items: center;
-        content: "";
-        border-right: 2px solid var(--palette-secondary-title);
-        border-top: 2px solid var(--palette-secondary-title);
         width: 6px;
         height: 6px;
-        color: var(--palette-secondary-title);
+        content: "";
         transform: rotate(135deg);
+        color: var(--palette-secondary-title);
+        border-top: 2px solid var(--palette-secondary-title);
+        border-right: 2px solid var(--palette-secondary-title);
       }
     }
 
     &-list:hover {
       .header__nav-list-wrapper {
         @include media-breakpoint-up(xl) {
-          display: flex;
-          background-color: #fff;
-          border-bottom-left-radius: var(--border-radius-1);
-          border-bottom-right-radius: var(--border-radius-1);
-          border-top: 3px solid #00a4e8;
-          box-shadow: var(--shadows-1);
-          flex-direction: column;
-          gap: 17px;
-          padding: 18px 17px 21px;
           position: absolute;
-          top: 55px;
           z-index: 2;
+          top: 55px;
+          display: flex;
+          flex-direction: column;
+          padding: 18px 17px 21px;
+          border-top: 3px solid #00a4e8;
+          border-bottom-right-radius: var(--border-radius-1);
+          border-bottom-left-radius: var(--border-radius-1);
+          background-color: #fff;
+          box-shadow: var(--shadows-1);
+          gap: 17px;
         }
       }
     }
@@ -193,12 +196,12 @@
 
   &__cross-item {
     @include media-breakpoint-down(xl) {
-      color: var(--palette-background-btn);
+      font-size: 14px;
+      font-weight: var(--typography-fontWeightSemiBold);
       display: flex;
       justify-content: flex-end;
-      font-weight: var(--typography-fontWeightSemiBold);
-      font-size: 14px;
       margin-bottom: 14px;
+      color: var(--palette-background-btn);
     }
     @include media-breakpoint-up(xl) {
       display: none;
@@ -212,25 +215,25 @@
   }
 
   &__nav-item {
-    gap: 3px;
-    color: var(--palette-secondary-title);
     padding-top: 5px;
     padding-bottom: 5px;
+    color: var(--palette-secondary-title);
+    gap: 3px;
 
     &:hover {
       color: rgba(0, 164, 232, 1);
     }
 
     @include media-breakpoint-down(xl) {
+      font-weight: 100;
       display: flex;
       flex-direction: column;
-      font-weight: 100;
     }
 
     @include media-breakpoint-up(xl) {
+      font-weight: var(--typography-fontWeightBold);
       display: flex;
       align-items: center;
-      font-weight: var(--typography-fontWeightBold);
     }
   }
 }

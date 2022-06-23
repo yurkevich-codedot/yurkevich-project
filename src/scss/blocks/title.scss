@@ -31,8 +31,8 @@
 
   &--primary {
     @include media-breakpoint-down(lg) {
-      letter-spacing: 1px;
       font-size: 22px;
+      letter-spacing: 1px;
     }
 
     @include media-breakpoint-up(lg) {

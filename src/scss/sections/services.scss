@@ -51,16 +51,16 @@
 
     @include media-breakpoint-down(sm) {
       flex-basis: 145px;
-      gap: 22px;
       height: 162px;
       padding-top: 35px;
       padding-bottom: 15px;
+      gap: 22px;
     }
 
     @include media-breakpoint-between(sm, md) {
       flex-basis: 144px;
-      padding: 28px 7px 14px 11px;
       height: 162px;
+      padding: 28px 7px 14px 11px;
       gap: 33px;
     }
 
@@ -72,8 +72,8 @@
 
     @include media-breakpoint-up(lg) {
       flex-basis: 322px;
-      padding: 28px 44px 30px 43px;
       height: 318px;
+      padding: 28px 44px 30px 43px;
     }
 
     &:hover {
@@ -85,8 +85,8 @@
       align-items: center;
 
       @include media-breakpoint-down(lg) {
-        height: 45%;
         width: 45%;
+        height: 45%;
       }
 
       @include media-breakpoint-up(lg) {
@@ -105,9 +105,9 @@
   }
 
   &__icon {
-    height: 100%;
-    max-width: 115px;
     width: 100%;
+    max-width: 115px;
+    height: 100%;
   }
 
   &__item-name {

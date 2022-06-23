@@ -6,10 +6,10 @@
   }
 
   &__background-img {
-    width: 100%;
-    height: 100%;
     z-index: -1;
     left: 0;
+    width: 100%;
+    height: 100%;
 
     &--backlayer {
       position: absolute;
@@ -37,8 +37,8 @@
     }
 
     @include media-breakpoint-between(lg, xl) {
-      width: 100%;
       align-items: center;
+      width: 100%;
     }
 
     @include media-breakpoint-up(xl) {
@@ -50,13 +50,13 @@
     display: flex;
 
     @include media-breakpoint-down(lg) {
-      width: 100%;
       justify-content: space-between;
+      width: 100%;
     }
 
     @include media-breakpoint-up(lg) {
-      gap: 45px;
       flex-wrap: wrap;
+      gap: 45px;
     }
   }
 
@@ -67,8 +67,8 @@
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
-      gap: 24px;
       width: 100%;
+      gap: 24px;
     }
     @include media-breakpoint-between(lg, xl) {
       width: 100%;
@@ -90,8 +90,8 @@
       }
 
       @include media-breakpoint-up(lg) {
-        padding-inline-start: 20px;
         padding-top: 30px;
+        padding-inline-start: 20px;
       }
     }
   }
@@ -103,17 +103,17 @@
   }
 
   &__subitem {
-    position: relative;
-    color: var(--palette-secondary-text);
     line-height: 20px;
+    position: relative;
     width: max-content;
+    color: var(--palette-secondary-text);
 
     &:hover::before {
       position: absolute;
-      content: "";
       top: 100%;
       width: 100%;
       height: 3px;
+      content: "";
       background-color: var(--palette-secondary-text);
     }
   }
@@ -131,10 +131,10 @@
 
     &:hover::before {
       position: absolute;
-      content: "";
       top: 100%;
       width: 100%;
       height: 3px;
+      content: "";
       background-color: var(--palette-secondary-text);
     }
   }
@@ -152,11 +152,11 @@
   }
 
   &__subwrapper {
-    position: relative;
-    background-color: var(--palette-secondary-text);
-    padding-bottom: 20px;
     font-size: 14px;
     line-height: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    background-color: var(--palette-secondary-text);
 
     @include media-breakpoint-down(lg) {
       padding-top: 16px;
@@ -171,8 +171,8 @@
       justify-content: space-between;
 
       @include media-breakpoint-down(lg) {
-        gap: 15px;
         flex-direction: column-reverse;
+        gap: 15px;
       }
 
       @include media-breakpoint-up(lg) {
@@ -189,14 +189,14 @@
         justify-content: space-between;
         padding-inline-end: 48px;
         &::before {
-          content: "";
           position: absolute;
-          width: 100%;
           top: 50%;
           left: 0;
+          width: 100%;
           height: 1px;
-          background-color: var(--palette-secondary-title);
+          content: "";
           opacity: 0.2;
+          background-color: var(--palette-secondary-title);
         }
       }
 
