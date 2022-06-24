@@ -71,12 +71,28 @@
   &__navigation {
     display: flex;
     align-items: center;
+    position: relative;
+    gap: 26px;
 
     &-item:not(:first-of-type)::after,
     &-item:not(:last-of-type)::after {
-      padding-left: 5px;
-      padding-right: 5px;
-      content: ">";
+      border-right: 2px solid;
+      border-top: 2px solid;
+      content: "";
+      height: 6px;
+      margin-left: 11px;
+      margin-right: 7px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 6px;
+
+      @include media-breakpoint-down(lg) {
+        top: 4px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        top: 7px;
+      }
     }
 
     &-item:last-of-type::after {

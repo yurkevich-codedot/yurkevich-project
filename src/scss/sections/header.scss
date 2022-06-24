@@ -12,30 +12,37 @@
 }
 
 .header {
-  #menu { // TODO
+  #menu {
+    // TODO
     display: none;
 
     &:checked + {
-      .backdrop { // TODO
+      .backdrop {
+        // TODO
         left: 0;
       }
     }
 
     &:not(:checked) + {
-      .backdrop { // TODO
+      .backdrop {
+        // TODO
         left: -100%;
         pointer-events: none;
       }
     }
 
-    &:checked + .backdrop + { // TODO
-      .header__inner { // TODO
+    &:checked + .backdrop + {
+      // TODO
+      .header__inner {
+        // TODO
         left: 0;
       }
     }
 
-    &:not(:checked) + .backdrop + { // TODO
-      .header__inner { // TODO
+    &:not(:checked) + .backdrop + {
+      // TODO
+      .header__inner {
+        // TODO
         left: -100%;
       }
     }
@@ -51,7 +58,7 @@
       width: 26px;
       height: 4px;
       border-radius: 2px; // TODO
-      background-color: var(--palette-primary-title);
+      background-color: var(--palette-primary-blue);
 
       &:after,
       &:before {
@@ -59,9 +66,9 @@
         width: 26px;
         height: 4px;
         content: "";
-        color: var(--palette-primary-title);
+        color: var(--palette-primary-blue);
         border-radius: 2px; // TODO
-        background-color: var(--palette-primary-title);
+        background-color: var(--palette-primary-blue);
       }
 
       &::after {
@@ -132,14 +139,15 @@
         height: 6px;
         content: "";
         transform: rotate(135deg);
-        color: var(--palette-secondary-title);
-        border-top: 2px solid var(--palette-secondary-title);
-        border-right: 2px solid var(--palette-secondary-title);
+        color: var(--palette-secondary-blue);
+        border-top: 2px solid var(--palette-secondary-blue);
+        border-right: 2px solid var(--palette-secondary-blue);
       }
     }
 
     &-list:hover {
-      .header__nav-list-wrapper { // TODO
+      .header__nav-list-wrapper {
+        // TODO
         @include media-breakpoint-up(xl) {
           position: absolute;
           z-index: 2;
@@ -172,7 +180,7 @@
   }
 
   &__list-item {
-    color: var(--palette-secondary-title); // TODO
+    color: var(--palette-secondary-blue); // TODO
 
     &:hover {
       color: rgba(0, 164, 232, 1); // TODO
@@ -222,7 +230,7 @@
   &__nav-item {
     padding-top: 5px;
     padding-bottom: 5px;
-    color: var(--palette-secondary-title); // TODO
+    color: var(--palette-secondary-blue); // TODO
     gap: 3px;
 
     &:hover {
@@ -231,8 +239,7 @@
 
     @include media-breakpoint-down(xl) {
       font-weight: 100;
-      display: flex; // TODO
-      flex-direction: column; // TODO
+      display: grid;
     }
 
     @include media-breakpoint-up(xl) {
