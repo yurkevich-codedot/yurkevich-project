@@ -13,8 +13,8 @@
   --border-radius-2: 6px;
 
   --shadows-1: 2px 4px 16px rgba(158, 158, 158, 0.4);
-  --shadows-2: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
-  --shadows-menu: 0px 0px 10px 6px #00000082, 0 0 4px 2px #0000008f;
+  --shadows-2: 0 3px 16px 4px rgba(29, 51, 107, 0.1);
+  --shadows-menu: 0 0 10px 6px #00000082, 0 0 4px 2px #0000008f;
 
   --typography-htmlFontSize: 16px;
   --typography-fontFamily: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto,
@@ -30,5 +30,5 @@
   --filters-opacity: 0.1;
 
   --spacing-container: 90px;
-  --spacing-container-mobile: 30px;
+  --spacing-container-mobile: 30px; // TODO
 }

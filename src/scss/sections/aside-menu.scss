@@ -2,6 +2,7 @@
   @include media-breakpoint-down(lg) {
     display: none;
   }
+
   @include media-breakpoint-up(lg) {
     position: fixed;
     z-index: 11;
@@ -9,10 +10,10 @@
     right: 0;
 
     &__wrapper {
-      display: flex;
-      flex-direction: column;
-      border-radius: 3px;
-      background-color: white;
+      display: flex; // TODO
+      flex-direction: column; // TODO
+      border-radius: 3px; // TODO
+      background-color: white; // TODO
       box-shadow: 0 2px 12px 1px rgba(29, 51, 107, 0.25);
     }
 
@@ -20,7 +21,7 @@
       padding: 12px;
 
       &:not(:last-of-type) {
-        border-bottom: 1px solid #19448425;
+        border-bottom: 1px solid #19448425; // TODO
       }
     }
   }

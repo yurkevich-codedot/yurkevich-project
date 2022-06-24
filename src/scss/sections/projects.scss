@@ -3,7 +3,7 @@
   padding-bottom: 121px;
 
   &__background {
-    background-color: #276ed80a;
+    background-color: #276ed80a; // TODO
   }
 
   &__background-img {
@@ -12,8 +12,8 @@
   }
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO
+    flex-direction: column; // TODO
     padding-top: 45px;
 
     @include media-breakpoint-down(lg) {
@@ -30,9 +30,9 @@
   }
 
   &__item {
-    display: flex;
+    display: flex; // TODO
     overflow: hidden;
-    flex-direction: column;
+    flex-direction: column; // TODO
     height: auto;
     border-radius: var(--border-radius-1);
     box-shadow: var(--shadows-2);
@@ -53,9 +53,9 @@
   }
 
   &__name-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+    display: flex; // TODO
+    flex-direction: column; // TODO
+    background-color: white; // TODO
 
     @include media-breakpoint-down(lg) {
       padding: 8px 11px 16px;
@@ -131,17 +131,17 @@
   }
 
   &__button-prev {
-    left: -70px;
+    left: -70px; // TODO
     transform: rotate(225deg);
   }
 
   &__button-next {
-    right: -70px;
+    right: -70px; // TODO
     transform: rotate(45deg);
   }
 }
 
-.swiper {
+.swiper { // TODO
   padding-top: 20px;
   padding-bottom: 20px;
 }

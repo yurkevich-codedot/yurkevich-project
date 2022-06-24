@@ -2,8 +2,8 @@
   padding-top: 120px;
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO grid
+    flex-direction: column; // TODO
 
     @include media-breakpoint-down(lg) {
       gap: 32px;
@@ -15,9 +15,9 @@
   }
 
   &__title-wrapper {
-    display: flex;
+    display: flex; // TODO grid
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; // TODO
     text-align: center;
 
     @include media-breakpoint-down(lg) {
@@ -30,9 +30,9 @@
   }
 
   &__subtitles {
-    display: flex;
+    display: flex; // TODO grid
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; // TODO
 
     @include media-breakpoint-down(lg) {
       gap: 33px;
@@ -78,8 +78,8 @@
   }
 
   &__communication {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO grid
+    flex-direction: column; // TODO
 
     @include media-breakpoint-down(lg) {
       gap: 22px;
@@ -128,10 +128,10 @@
   }
 
   &__form-inner {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO
+    flex-direction: column; // TODO
     padding: 50px 40px 70px 40px;
-    background-color: #ffffff;
+    background-color: #ffffff; // TODO
     box-shadow: var(--shadows-2);
     gap: 20px;
 
@@ -144,9 +144,9 @@
   &__form-item {
     width: 339px;
     padding: 10px 15px;
-    border: 1px solid #d7d7d7;
-    border-radius: 4px;
-    background: #ffffff;
+    border: 1px solid #d7d7d7; // TODO
+    border-radius: 4px; // TODO
+    background: #ffffff; // TODO
 
     &--large {
       height: 80px;
@@ -173,7 +173,7 @@
     row-gap: 90px;
 
     @include media-breakpoint-down(lg) {
-      display: none;
+      display: none; // TODO
     }
 
     @include media-breakpoint-between(lg, xl) {

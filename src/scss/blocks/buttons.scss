@@ -11,36 +11,36 @@
   border-radius: var(--border-radius-2);
 
   &--green {
-    transition: background-color 0.2s linear, border-color 0.2s linear;
-    color: var(--palette-secondary-text);
-    background-color: var(--palette-background-btn);
+    transition: background-color 0.2s linear, border-color 0.2s linear; // TODO
+    color: var(--palette-secondary-text); // TODO
+    background-color: var(--palette-background-btn); // TODO
 
     &:hover {
-      border-color: #0a8d4e;
-      background-color: #0a8d4e;
+      border-color: #0a8d4e; // TODO
+      background-color: #0a8d4e; // TODO
     }
 
     &:active {
-      border-color: #06703d;
-      background-color: #06703d;
+      border-color: #06703d; // TODO
+      background-color: #06703d; // TODO
     }
   }
 
   &--white {
-    transition: background-color 0.2s linear, border-color 0.2s linear;
-    color: var(--palette-background-btn);
-    background-color: var(--palette-secondary-text);
+    transition: background-color 0.2s linear, border-color 0.2s linear; // TODO
+    color: var(--palette-background-btn); // TODO
+    background-color: var(--palette-secondary-text); // TODO
 
     &:hover {
-      color: var(--palette-secondary-text);
+      color: var(--palette-secondary-text); // TODO
       border-color: var(--palette-background-btn);
-      background-color: var(--palette-background-btn);
+      background-color: var(--palette-background-btn); // TODO
     }
 
     &:active {
       color: var(--palette-secondary-text);
-      border-color: #06703d;
-      background-color: #06703d;
+      border-color: #06703d; // TODO
+      background-color: #06703d; // TODO
     }
   }
 }

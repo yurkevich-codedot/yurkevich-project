@@ -1,7 +1,6 @@
 .footer {
   margin-top: auto;
-
-  &__wrapper-top {
+  ТА &__wrapper-top {
     position: relative;
   }
 
@@ -28,8 +27,8 @@
   }
 
   &__links-item {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO grid
+    flex-direction: column; // TODO
     gap: 53px;
 
     @include media-breakpoint-down(lg) {
@@ -79,8 +78,8 @@
     }
 
     &-inner {
-      display: flex;
-      flex-direction: column;
+      display: flex; // TODO grid
+      flex-direction: column; // TODO
 
       gap: 18px;
 
@@ -119,8 +118,8 @@
   }
 
   &__names-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO
+    flex-direction: column; // TODO
     padding-top: 24px;
     gap: 24px;
   }
@@ -188,6 +187,7 @@
       @include media-breakpoint-down(lg) {
         justify-content: space-between;
         padding-inline-end: 48px;
+
         &::before {
           position: absolute;
           top: 50%;

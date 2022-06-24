@@ -13,16 +13,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       @include media-breakpoint-down(xl) {
         margin-top: 35px;
         margin-bottom: 79px;
       }
 
       @include media-breakpoint-up(xl) {
-        margin-top: 24px;
-        margin-right: 170px;
-        margin-bottom: 27px;
-        margin-left: 170px;
+        margin: 24px 170px 27px;
       }
 
       &::before {
@@ -31,8 +29,8 @@
         width: 100%;
         height: 70%;
         content: "";
-        border: 6px solid #66d6a0;
-        border-radius: 14px;
+        border: 6px solid #66d6a0; // TODO
+        border-radius: 14px; // TODO
 
         @include media-breakpoint-down(lg) {
           width: 105%;
@@ -43,10 +41,10 @@
 
     &-list {
       z-index: 6;
-      display: flex;
-      flex-direction: column;
+      display: flex; // TODO grid
+      flex-direction: column; // TODO
 
-      background-color: #fff;
+      background-color: #fff; // TODO
 
       @include media-breakpoint-down(lg) {
         padding-left: 19px;
@@ -75,7 +73,7 @@
         width: 12px;
         height: 12px;
         content: "";
-        border-radius: 50px;
+        border-radius: 50px; // TODO
         background-color: var(--palette-secondary-title);
 
         @include media-breakpoint-down(lg) {
@@ -102,27 +100,31 @@
       display: none;
 
       &:checked ~ .faq__answer-inner {
+        // TODO
         display: block;
         opacity: 1;
       }
 
       &:not(:checked) ~ .faq__answer-inner {
+        // TODO
         display: none;
-        opacity: 0;
+        opacity: 0; // TODO
       }
 
       &:checked ~ .faq__answer-title::before {
+        // TODO
         transform: rotate(-45deg);
       }
 
       &:not(:checked) ~ .faq__answer-title::before {
+        // TODO
         transform: rotate(135deg);
       }
     }
 
     &-wrapper {
-      display: flex;
-      flex-direction: column;
+      display: flex; // TODO grid
+      flex-direction: column; // TODO
       gap: 18px;
 
       @include media-breakpoint-up(xl) {
@@ -176,8 +178,8 @@
         height: 12px;
         content: "";
         transition: transform 0.1s linear;
-        border-top: 3px solid black;
-        border-right: 3px solid black;
+        border-top: 3px solid black; // TODO
+        border-right: 3px solid black; // TODO
 
         @include media-breakpoint-down(lg) {
           top: 13px;

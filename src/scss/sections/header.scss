@@ -12,30 +12,30 @@
 }
 
 .header {
-  #menu {
+  #menu { // TODO
     display: none;
 
     &:checked + {
-      .backdrop {
-        left: 0px;
+      .backdrop { // TODO
+        left: 0;
       }
     }
 
     &:not(:checked) + {
-      .backdrop {
+      .backdrop { // TODO
         left: -100%;
         pointer-events: none;
       }
     }
 
-    &:checked + .backdrop + {
-      .header__inner {
-        left: 0px;
+    &:checked + .backdrop + { // TODO
+      .header__inner { // TODO
+        left: 0;
       }
     }
 
-    &:not(:checked) + .backdrop + {
-      .header__inner {
+    &:not(:checked) + .backdrop + { // TODO
+      .header__inner { // TODO
         left: -100%;
       }
     }
@@ -45,11 +45,12 @@
     @include media-breakpoint-up(xl) {
       display: none;
     }
+
     @include media-breakpoint-down(xl) {
       position: relative;
       width: 26px;
       height: 4px;
-      border-radius: 2px;
+      border-radius: 2px; // TODO
       background-color: var(--palette-primary-title);
 
       &:after,
@@ -59,7 +60,7 @@
         height: 4px;
         content: "";
         color: var(--palette-primary-title);
-        border-radius: 2px;
+        border-radius: 2px; // TODO
         background-color: var(--palette-primary-title);
       }
 
@@ -75,17 +76,18 @@
 
   &__inner {
     display: flex;
+
     @include media-breakpoint-down(xl) {
       position: fixed;
       z-index: 13;
       top: 0;
-      display: flex;
+      display: flex; // TODO
       overflow-y: auto;
-      flex-direction: column;
+      flex-direction: column; // TODO
       width: 275px;
       height: 100vh;
       transition: left 0.5s ease-in-out;
-      background-color: white;
+      background-color: white; // TODO
       box-shadow: var(--shadows-menu);
       padding-inline-start: 46px;
       padding-inline-end: 8px;
@@ -119,6 +121,7 @@
       @include media-breakpoint-down(xl) {
         display: none;
       }
+
       @include media-breakpoint-up(xl) {
         position: relative;
         bottom: 2px;
@@ -136,18 +139,18 @@
     }
 
     &-list:hover {
-      .header__nav-list-wrapper {
+      .header__nav-list-wrapper { // TODO
         @include media-breakpoint-up(xl) {
           position: absolute;
           z-index: 2;
           top: 55px;
-          display: flex;
-          flex-direction: column;
+          display: flex; // TODO
+          flex-direction: column; // TODO
           padding: 18px 17px 21px;
-          border-top: 3px solid #00a4e8;
+          border-top: 3px solid #00a4e8; // TODO
           border-bottom-right-radius: var(--border-radius-1);
           border-bottom-left-radius: var(--border-radius-1);
-          background-color: #fff;
+          background-color: #fff; // TODO
           box-shadow: var(--shadows-1);
           gap: 17px;
         }
@@ -159,19 +162,20 @@
     @include media-breakpoint-up(xl) {
       display: none;
     }
+
     @include media-breakpoint-down(xl) {
-      display: flex;
-      flex-direction: column;
+      display: flex; // TODO
+      flex-direction: column; // TODO
       padding-inline-start: 20px;
       gap: 12px;
     }
   }
 
   &__list-item {
-    color: var(--palette-secondary-title);
+    color: var(--palette-secondary-title); // TODO
 
     &:hover {
-      color: rgba(0, 164, 232, 1);
+      color: rgba(0, 164, 232, 1); // TODO
     }
 
     @include media-breakpoint-down(xl) {
@@ -203,6 +207,7 @@
       margin-bottom: 14px;
       color: var(--palette-background-btn);
     }
+
     @include media-breakpoint-up(xl) {
       display: none;
     }
@@ -217,17 +222,17 @@
   &__nav-item {
     padding-top: 5px;
     padding-bottom: 5px;
-    color: var(--palette-secondary-title);
+    color: var(--palette-secondary-title); // TODO
     gap: 3px;
 
     &:hover {
-      color: rgba(0, 164, 232, 1);
+      color: rgba(0, 164, 232, 1); // TODO
     }
 
     @include media-breakpoint-down(xl) {
       font-weight: 100;
-      display: flex;
-      flex-direction: column;
+      display: flex; // TODO
+      flex-direction: column; // TODO
     }
 
     @include media-breakpoint-up(xl) {

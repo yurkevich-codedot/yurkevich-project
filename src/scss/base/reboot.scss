@@ -22,8 +22,8 @@
 
 body {
   font-family: var(--typography-fontFamily);
-  display: flex;
-  flex-direction: column;
+  display: flex; // TODO
+  flex-direction: column; // TODO
   min-height: 100vh;
   margin: 0;
   color: var(--palette-text-primary);

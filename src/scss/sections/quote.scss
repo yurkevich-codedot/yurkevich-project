@@ -15,11 +15,11 @@
     }
 
     &-top {
-      position: relative;
+      position: relative; // TODO
     }
 
     &-bottom {
-      position: relative;
+      position: relative; // TODO
     }
   }
 
@@ -46,18 +46,17 @@
 
   &__title {
     z-index: 4;
-    display: flex;
+    display: flex; // TODO
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; // TODO
     width: 100%;
     min-height: 100%;
-
     text-align: center;
     letter-spacing: 1px;
   }
 
   &__description {
-    color: white;
+    color: white; // TODO
 
     @include media-breakpoint-down(md) {
       font-size: 16px;
@@ -77,11 +76,12 @@
   &__btn {
     display: flex;
     justify-content: center;
+
     @include media-breakpoint-up(md) {
-      padding: 25px 0;
+      padding: 25px 0; // TODO
     }
     @include media-breakpoint-down(md) {
-      padding: 10px 0;
+      padding: 10px 0; // TODO
     }
   }
 }

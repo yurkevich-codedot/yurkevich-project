@@ -1,3 +1,4 @@
+// TODO
 .description-block {
   padding-bottom: 40px;
 
@@ -10,14 +11,14 @@
     }
 
     @include media-breakpoint-up(lg) {
-      flex-direction: row;
+      flex-direction: row; // TODO
       gap: 140px;
     }
   }
 
   &__item-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex; // TODO grid
+    flex-direction: column; // TODO
     gap: 20px;
 
     @include media-breakpoint-down(lg) {
