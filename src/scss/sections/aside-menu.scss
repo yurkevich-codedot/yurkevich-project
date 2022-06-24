@@ -10,8 +10,7 @@
     right: 0;
 
     &__wrapper {
-      display: flex; // TODO
-      flex-direction: column; // TODO
+      display: grid;
       border-radius: 3px; // TODO
       background-color: white; // TODO
       box-shadow: 0 2px 12px 1px rgba(29, 51, 107, 0.25);

@@ -8,11 +8,11 @@
   }
 
   &--main-blue {
-    color: var(--palette-primary-title);
+    color: var(--palette-primary-blue);
   }
 
   &--primary-blue {
-    color: var(--palette-secondary-title);
+    color: var(--palette-secondary-blue);
   }
 
   &--main {
@@ -43,8 +43,6 @@
   }
 
   &--secondary {
-    letter-spacing: 1px;
-
     @include media-breakpoint-down(lg) {
       font-size: 20px;
       line-height: 38px;

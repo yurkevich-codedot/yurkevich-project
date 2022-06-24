@@ -2,7 +2,7 @@
   padding-bottom: 180px;
 
   &__wrapper {
-    background-color: var(--palette-quote-main);
+    background-color: var(--palette-quote-blue);
 
     @include media-breakpoint-down(lg) {
       padding-top: 15px;
@@ -14,12 +14,9 @@
       padding-bottom: 57px;
     }
 
-    &-top {
-      position: relative; // TODO
-    }
-
+    &-top,
     &-bottom {
-      position: relative; // TODO
+      position: relative;
     }
   }
 
@@ -46,13 +43,9 @@
 
   &__title {
     z-index: 4;
-    display: flex; // TODO
-    align-items: center;
-    flex-direction: column; // TODO
     width: 100%;
     min-height: 100%;
     text-align: center;
-    letter-spacing: 1px;
   }
 
   &__description {
@@ -78,10 +71,12 @@
     justify-content: center;
 
     @include media-breakpoint-up(md) {
-      padding: 25px 0; // TODO
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
     @include media-breakpoint-down(md) {
-      padding: 10px 0; // TODO
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }

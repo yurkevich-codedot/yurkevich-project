@@ -2,8 +2,8 @@
   padding-top: 120px;
 
   &__wrapper {
-    display: flex; // TODO grid
-    flex-direction: column; // TODO
+    display: flex;
+    flex-direction: column;
 
     @include media-breakpoint-down(lg) {
       gap: 32px;
@@ -15,9 +15,7 @@
   }
 
   &__title-wrapper {
-    display: flex; // TODO grid
-    align-items: center;
-    flex-direction: column; // TODO
+    display: grid;
     text-align: center;
 
     @include media-breakpoint-down(lg) {
@@ -30,9 +28,7 @@
   }
 
   &__subtitles {
-    display: flex; // TODO grid
-    align-items: center;
-    flex-direction: column; // TODO
+    display: grid;
 
     @include media-breakpoint-down(lg) {
       gap: 33px;
@@ -78,9 +74,8 @@
   }
 
   &__communication {
-    display: flex; // TODO grid
-    flex-direction: column; // TODO
-
+    display: flex;
+    flex-direction: column;
     @include media-breakpoint-down(lg) {
       gap: 22px;
     }
@@ -128,11 +123,11 @@
   }
 
   &__form-inner {
-    display: flex; // TODO
-    flex-direction: column; // TODO
+    display: grid;
     padding: 50px 40px 70px 40px;
     background-color: #ffffff; // TODO
     box-shadow: var(--shadows-2);
+    border-radius: var(--border-radius-2);
     gap: 20px;
 
     @include media-breakpoint-down(lg) {
@@ -166,14 +161,17 @@
     position: absolute;
     z-index: -1;
     bottom: 20px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     row-gap: 90px;
 
     @include media-breakpoint-down(lg) {
-      display: none; // TODO
+      display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
     }
 
     @include media-breakpoint-between(lg, xl) {

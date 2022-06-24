@@ -6,13 +6,7 @@
     margin-left: auto;
   }
 
-  @include media-breakpoint-down(sm) {
-    max-width: $breakpoints-sm;
-    padding-right: var(--spacing-container-mobile); // TODO
-    padding-left: var(--spacing-container-mobile); // TODO
-  }
-
-  @include media-breakpoint-between(sm, md) {
+  @include media-breakpoint-down(md) {
     max-width: $breakpoints-sm;
     padding-right: var(--spacing-container-mobile); // TODO
     padding-left: var(--spacing-container-mobile); // TODO
