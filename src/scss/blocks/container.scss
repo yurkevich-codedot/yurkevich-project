@@ -8,31 +8,31 @@
 
   @include media-breakpoint-down(md) {
     max-width: $breakpoints-sm;
-    padding-right: var(--spacing-container-mobile); // TODO
-    padding-left: var(--spacing-container-mobile); // TODO
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
   }
 
   @include media-breakpoint-between(md, lg) {
     max-width: $breakpoints-md;
-    padding-right: var(--spacing-container-mobile); // TODO
-    padding-left: var(--spacing-container-mobile); // TODO
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
   }
 
   @include media-breakpoint-between(lg, xl) {
     max-width: $breakpoints-lg;
-    padding-right: var(--spacing-container); // TODO
-    padding-left: var(--spacing-container); // TODO
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
   }
 
   @include media-breakpoint-between(xl, xxl) {
     max-width: $breakpoints-xl;
-    padding-right: var(--spacing-container); // TODO
-    padding-left: var(--spacing-container); // TODO
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
   }
 
   @include media-breakpoint-up(xxl) {
     max-width: $breakpoints-xxl;
-    padding-right: var(--spacing-container); // TODO
-    padding-left: var(--spacing-container); // TODO
+    padding-right: var(--spacing-container);
+    padding-left: var(--spacing-container);
   }
 }

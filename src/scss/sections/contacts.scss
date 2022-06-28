@@ -124,8 +124,8 @@
 
   &__form-inner {
     display: grid;
-    padding: 50px 40px 70px 40px;
-    background-color: #ffffff; // TODO
+
+    background-color: var(--pallete-papper-background);
     box-shadow: var(--shadows-2);
     border-radius: var(--border-radius-2);
     gap: 20px;
@@ -134,14 +134,18 @@
       width: 100%;
       padding: 40px 22px;
     }
+
+    @include media-breakpoint-up(lg) {
+      padding: 50px 40px 70px;
+    }
   }
 
   &__form-item {
     width: 339px;
     padding: 10px 15px;
-    border: 1px solid #d7d7d7; // TODO
-    border-radius: 4px; // TODO
-    background: #ffffff; // TODO
+    border: 1px solid var(--palette-border-input);
+    border-radius: calc(var(--border-radius-2) - 2px);
+    background-color: var(--pallete-papper-background);
 
     &--large {
       height: 80px;

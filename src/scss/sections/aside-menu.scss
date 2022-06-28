@@ -11,16 +11,16 @@
 
     &__wrapper {
       display: grid;
-      border-radius: 3px; // TODO
-      background-color: white; // TODO
-      box-shadow: 0 2px 12px 1px rgba(29, 51, 107, 0.25);
+      border-radius: calc(var(--border-radius-2) / 2);
+      background-color: var(--pallete-papper-background);
+      box-shadow: var(--shadows-aside);
     }
 
     &__item {
       padding: 12px;
 
       &:not(:last-of-type) {
-        border-bottom: 1px solid #19448425; // TODO
+        border-bottom: 1px solid var(--pallete-aside-border);
       }
     }
   }

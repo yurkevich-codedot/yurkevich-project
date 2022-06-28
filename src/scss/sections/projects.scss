@@ -40,12 +40,13 @@
     display: grid;
     width: 100%;
     justify-items: center;
-    background-color: #276ed80a; // TODO
+    background-color: var(--palette-projects-background);
   }
 
   &__background-img {
     width: 100%;
     height: 100%;
+    fill: var(--palette-quote-blue);
   }
 
   &__wrapper {
@@ -95,7 +96,7 @@
 
   &__name-wrapper {
     display: grid;
-    background-color: white; // TODO
+    background-color: var(--palette-secondary-text);
 
     @include media-breakpoint-down(lg) {
       padding: 8px 11px 16px;

@@ -1,5 +1,14 @@
 .description {
   padding-bottom: 40px;
+  @include media-breakpoint-between(lg, xxl) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
 
   &__wrapper {
     display: flex;

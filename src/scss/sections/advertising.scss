@@ -14,7 +14,7 @@
     @include media-breakpoint-down(lg) {
       width: 320px;
       flex-direction: column;
-      padding: 32px 15px 53px 15px;
+      padding: 32px 15px 53px;
       gap: 23px;
     }
 
@@ -40,16 +40,63 @@
 
   &__rating {
     position: relative;
-    display: flex;
-    align-items: center;
 
-    @include media-breakpoint-down(lg) {
-      padding-bottom: 12px;
-      padding-left: 0; // TODO
+    &::before {
+      color: var(--palette-rating-not-active);
+      content: "★★★★★";
+      font-size: 28px;
+      letter-spacing: 10px;
     }
 
-    @include media-breakpoint-up(lg) {
-      padding-left: 10px;
+    &-active {
+      display: flex;
+      position: absolute;
+      width: var(--width);
+      height: 100%;
+      top: 0;
+      font-size: 28px;
+      left: 0;
+      overflow: hidden;
+
+      &::before {
+        color: var(--palette-background-btn);
+        content: "★★★★★";
+        font-size: 28px;
+        letter-spacing: 10px;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+    &-items {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &-item {
+      flex: 0 0 20%;
+      height: 100%;
+      opacity: 0;
+    }
+    &-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 12px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 17px;
+      }
     }
 
     &-avg {
@@ -57,56 +104,10 @@
       font-weight: var(--typography-fontWeightSemiBold);
       line-height: 38px;
     }
-
-    &-view {
-      position: relative;
-    }
-
-    &-view--active {
-      font-size: 28px;
-      position: absolute;
-      top: 0;
-
-      overflow: hidden;
-      height: 100%;
-      letter-spacing: 11px;
-
-      @include media-breakpoint-down(lg) {
-        width: 66%;
-      }
-
-      @include media-breakpoint-up(lg) {
-        width: 64%;
-      }
-
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 39px;
-        width: 100%;
-        height: 100%;
-        content: "★★★★★";
-        color: green; // TODO
-      }
-    }
-
-    &-view::before {
-      font-size: 28px;
-      position: relative;
-      bottom: 2px;
-      padding-right: 2px;
-      padding-left: 10px;
-      content: "★★★★★";
-      letter-spacing: 11px;
-      color: #e1e1e1; // TODO
-    }
-
-    &-review {
-      width: max-content;
-    }
   }
 
   &__btn-inner {
-    padding: 0 20px; // TODO
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

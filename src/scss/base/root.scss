@@ -4,17 +4,28 @@
   --palette-quote-blue: #276ed8;
   --palette-swiper-arrow: #84b5ff;
   --palette-primary-text: #242424;
+  --palette-black: rgb(0, 0, 0);
   --palette-secondary-text: #ffffff;
   --pallete-papper-background: #ffffff;
+  --palette-services-background: #f4f8fd;
   --palette-background-btn: #06b25f;
+  --palette-btn-hover: #0a8d4e;
+  --palette-btn-active: #06703d;
   --palette-bracket: #66d6a0;
   --palette-border-input: #d7d7d7;
+  --pallete-aside-border: #19448425;
+  --palete-menu-border-top: #00a4e8;
+  --palette-menu-hover: rgba(0, 164, 232, 1);
+  --palette-projects-background: #276ed80a;
+  --palette-rating-not-active: #e1e1e1;
 
   --border-radius-1: 16px;
   --border-radius-2: 6px;
+  --border-radius-full: 50px;
 
   --shadows-1: 2px 4px 16px rgba(158, 158, 158, 0.4);
   --shadows-2: 0 3px 16px 4px rgba(29, 51, 107, 0.1);
+  --shadows-aside: 0 2px 12px 1px rgba(29, 51, 107, 0.25);
   --shadows-menu: 0 0 10px 6px #00000082, 0 0 4px 2px #0000008f;
 
   --typography-htmlFontSize: 16px;
@@ -24,12 +35,12 @@
   --typography-fontFamily-headings: Harabara, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --typography-fontWeightThin: 100;
   --typography-fontWeightSemiBold: 600;
   --typography-fontWeightBold: 700;
   --typography-fontWeightExtraBold: 800;
 
   --filters-opacity: 0.1;
 
-  --spacing-container: 90px;
-  --spacing-container-mobile: 30px; // TODO
+  --spacing-container: 30px;
 }

@@ -12,20 +12,20 @@
 
     @include media-breakpoint-between(lg, xl) {
       max-width: $breakpoints-lg;
-      padding-right: var(--spacing-container); // TODO
-      padding-left: var(--spacing-container); // TODO
+      padding-right: var(--spacing-container);
+      padding-left: var(--spacing-container);
     }
 
     @include media-breakpoint-between(xl, xxl) {
       max-width: $breakpoints-xl;
-      padding-right: var(--spacing-container); // TODO
-      padding-left: var(--spacing-container); // TODO
+      padding-right: var(--spacing-container);
+      padding-left: var(--spacing-container);
     }
 
     @include media-breakpoint-up(xxl) {
       max-width: $breakpoints-xxl;
-      padding-right: var(--spacing-container); // TODO
-      padding-left: var(--spacing-container); // TODO
+      padding-right: var(--spacing-container);
+      padding-left: var(--spacing-container);
     }
   }
 
@@ -65,8 +65,8 @@
         width: 100%;
         height: 70%;
         content: "";
-        border: 6px solid #66d6a0; // TODO
-        border-radius: 14px; // TODO
+        border: 6px solid var(--palette-bracket);
+        border-radius: calc(var(--border-radius-1) - 2px);
 
         @include media-breakpoint-down(lg) {
           width: 105%;
@@ -79,7 +79,7 @@
       z-index: 6;
       display: grid;
 
-      background-color: #fff; // TODO
+      background-color: var(--pallete-papper-background);
 
       @include media-breakpoint-down(lg) {
         gap: 30px;
@@ -110,7 +110,7 @@
         width: 12px;
         height: 12px;
         content: "";
-        border-radius: 50px; // TODO
+        border-radius: var(--border-radius-full);
         background-color: var(--palette-secondary-blue);
 
         @include media-breakpoint-down(lg) {
@@ -139,21 +139,6 @@
       &:checked ~ .faq__answer-inner {
         // TODO
         display: block;
-      }
-
-      // &:not(:checked) ~ .faq__answer-inner {
-      //   // TODO
-      //   display: none;
-      // }
-
-      &:checked ~ .faq__answer-title::before {
-        // TODO
-        transform: rotate(-45deg);
-      }
-
-      &:not(:checked) ~ .faq__answer-title::before {
-        // TODO
-        transform: rotate(135deg);
       }
     }
 
@@ -227,9 +212,9 @@
         width: 12px;
         height: 12px;
         content: "";
-        transition: transform 0.1s linear;
-        border-top: 3px solid black; // TODO
-        border-right: 3px solid black; // TODO
+        transform: rotate(315deg);
+        border-top: 3px solid var(--palette-black);
+        border-right: 3px solid var(--palette-black);
 
         @include media-breakpoint-down(lg) {
           top: 13px;
@@ -248,7 +233,6 @@
       line-height: 26px;
       padding-right: 32px;
       padding-left: 32px;
-      transition: opacity 0.2s linear;
 
       @include media-breakpoint-down(lg) {
         padding-top: 13px;

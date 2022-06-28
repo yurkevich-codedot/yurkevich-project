@@ -45,7 +45,7 @@
     align-items: center;
     text-align: center;
     border-radius: var(--border-radius-1);
-    background-color: #f4f8fd; // TODO
+    background-color: var(--palette-services-background);
     box-shadow: var(--shadows-2);
 
     @include media-breakpoint-down(md) {
@@ -69,7 +69,7 @@
     }
 
     &:hover {
-      background-color: #ffffff; // TODO
+      background-color: var(--pallete-papper-background);
     }
 
     &-icon {
