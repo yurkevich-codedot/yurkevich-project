@@ -34,11 +34,11 @@
       pointer-events: none;
     }
 
-    &:checked + .backdrop + .header__inner {
+    &:checked ~ .header__inner {
       left: 0;
     }
 
-    &:not(:checked) + .backdrop + .header__inner {
+    &:not(:checked) ~ .header__inner {
       left: -100%;
     }
   }

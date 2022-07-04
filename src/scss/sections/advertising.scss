@@ -30,7 +30,7 @@
 
     @include media-breakpoint-between(xl, xxl) {
       padding: 32px;
-      gap: 89px;
+      gap: 84px;
     }
 
     @include media-breakpoint-up(xxl) {
@@ -51,7 +51,7 @@
     &-active {
       display: flex;
       position: absolute;
-      width: var(--width);
+      width: calc((((var(--value) * 100) / 5) - 3) * 1%);
       height: 100%;
       top: 0;
       font-size: 28px;

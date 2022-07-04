@@ -1,5 +1,13 @@
 .contacts {
-  padding-top: 120px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 
   &__wrapper {
     display: flex;

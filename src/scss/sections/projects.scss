@@ -1,8 +1,15 @@
 .projects {
   display: grid;
   justify-items: center;
-  padding-top: 187px;
-  padding-bottom: 121px;
+  padding-bottom: 120px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 171px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 65px;
+  }
 
   &__container {
     @include media-breakpoint-down(lg) {

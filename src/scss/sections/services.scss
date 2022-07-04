@@ -1,7 +1,11 @@
 .services {
   padding-top: 160px;
-  padding-bottom: 255px;
+  padding-bottom: 282px;
 
+  @include media-breakpoint-down(lg) {
+    padding-top: 35px;
+    padding-bottom: 152px;
+  }
   &__wrapper {
     display: grid;
 

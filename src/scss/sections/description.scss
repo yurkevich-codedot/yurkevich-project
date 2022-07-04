@@ -15,7 +15,7 @@
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;
-      gap: 50px;
+      gap: 36px;
     }
 
     @include media-breakpoint-up(lg) {
@@ -30,6 +30,7 @@
 
     @include media-breakpoint-down(lg) {
       align-items: center;
+      gap: 13px;
     }
 
     @include media-breakpoint-up(lg) {
@@ -38,7 +39,12 @@
   }
 
   &__paragraph {
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 17px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 10px;
+    }
     line-height: 26px;
-    padding-bottom: 10px;
   }
 }
